@@ -1,0 +1,19 @@
+plugins {
+    id "io.freefair.lombok" version "6.4.1"
+    id "kr.entree.spigradle" version "2.3.4" 
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id 'java-library'
+
+}
+
+repositories{
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    // Purpur repo
+    maven { url "https://repo.purpurmc.org/snapshots" }
+}
+
+dependencies {
+    compileOnly("org.purpurmc.purpur:purpur-api:1.18.2-R0.1-SNAPSHOT")
+}
