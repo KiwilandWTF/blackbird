@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Declare variable
+CONTAINER_NAME=${1}
+IMG_NAME="us.jcedeno/blackbird:latest"
+PORT=25569
+RAM="6g"
+
+# Build & run container
+docker build . -t $IMG_NAME && docker run -it -e BLACKBIRD_DATA="e0d2fe99-0bc3-464b-9297-b88b7ddbb4ca" --memory=$RAM --name $CONTAINER_NAME -p $PORT:25565 $IMG_NAME

@@ -1,6 +1,6 @@
 plugins {
     id "io.freefair.lombok" version "6.4.1"
-    id "kr.entree.spigradle" version "2.3.4" 
+    id "kr.entree.spigradle" version "2.2.0" 
     id "com.github.johnrengelman.shadow" version "7.1.2"
     id 'java-library'
 
@@ -12,6 +12,14 @@ repositories{
     jcenter()
     // Purpur repo
     maven { url "https://repo.purpurmc.org/snapshots" }
+}
+
+spigot {
+    authors('jcedeno')
+    setApiVersion('1.18')
+    setVersion('1.0.0-SNAPSHOT')
+    setName('blackbird-bukkit')
+    load STARTUP
 }
 
 dependencies {

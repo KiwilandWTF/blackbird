@@ -1,0 +1,5 @@
+{
+    "gamemode": "UHC",
+    "host": "jcedeno",
+    "blacklist": ["maria", "mario"]
+}
