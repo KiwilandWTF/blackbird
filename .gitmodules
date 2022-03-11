@@ -1,0 +1,3 @@
+[submodule "blackapp"]
+	path = blackapp
+	url = https://github.com/KiwilandWTF/blackapp.git
